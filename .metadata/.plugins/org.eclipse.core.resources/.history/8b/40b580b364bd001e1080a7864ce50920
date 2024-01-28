@@ -1,0 +1,41 @@
+package altura;
+
+import java.util.Scanner;
+
+public class Alturas {
+	public static void main (String[] args) {
+		double media;
+		
+		Scanner sc = new Scanner(System.in);
+	
+		System.out.println("quantas pessoas serao digitadas? ");
+		int n = sc.nextInt();
+		
+		String[] nomes = new String[n];
+		int [] idade = new int[n];
+		double [] altura = new double[n];
+		
+		
+		String nome = 
+		
+		for (int i=0; i<n; i++) {
+			System.out.printf("digite dados da %da pessoa ", i+1);
+			
+			System.out.print("nome: ");
+			nome[i] = sc.next();
+			
+			System.out.print("idade: ");
+			idade[i] = sc.nextInt();
+			
+			System.out.print("altura: ");
+			altura[i] = sc.nextDouble();
+		}
+		
+		for (int i=0; i<n; i++) {
+			media += altura[i];
+		}
+		
+		
+		
+	}
+}
