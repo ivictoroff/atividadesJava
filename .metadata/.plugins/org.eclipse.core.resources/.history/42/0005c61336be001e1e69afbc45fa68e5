@@ -58,7 +58,9 @@ public class Programa {
 		for (Funcionarios func : lista) {
 			System.out.println(func);
 		}
-
+		
+		
+		
 		
 		sc.close();
 	}

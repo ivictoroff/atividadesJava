@@ -20,16 +20,13 @@ public class Programa {
 		int n = sc.nextInt();
 		
 		for (int i=0; i<n; i++) {
-			
-			System.out.println();
 			System.out.println("funcionario #"+ (i+1));
 			
 			System.out.print("ID:");
 			Integer id = sc.nextInt();
 			
 			System.out.print("Nome:");
-			sc.nextLine();
-			String nome = sc.nextLine();
+			String nome = sc.next();
 			
 			System.out.print("Salario:");
 			Double salario = sc.nextDouble();
@@ -43,7 +40,7 @@ public class Programa {
 			System.out.print("insira o funcionario que recebera um aumento salarial: ");
 			Integer idsalario = sc.nextInt();
 			
-			Integer pos = position(lista, idsalario);
+			Integer pos = hasId(lista, idsalario);
 			if (pos == null) {
 				System.out.println("funcionario nao encontrado");
 			}
@@ -52,18 +49,17 @@ public class Programa {
 				Double perc = sc.nextDouble();
 				lista.get(pos).aumento(perc);
 			}
-		System.out.println();
+			System.out.println();
+			
 		
 		System.out.println("lista de funcionarios: ");
-		for (Funcionarios func : lista) {
-			System.out.println(func);
-		}
-
+		System.out.println(lista);
 		
-		sc.close();
+		
+
 	}
 	
-	public static Integer position (List <Funcionarios> list, int id) {
+	public static Integer hasId (List <Funcionarios> list, int id) {
 		for (int i=0; i<list.size();i++) {
 			if (list.get(i).getId() == id) {
 				return i;

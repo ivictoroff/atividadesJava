@@ -6,9 +6,7 @@ public class Funcionarios {
 	private String nome;
 	private Double salario;
 	
-	public Funcionarios () {
-	}
-	
+
 	public Funcionarios(Integer id, String nome, Double salario) {
 		this.id = id;
 		this.nome = nome;
@@ -41,8 +39,13 @@ public class Funcionarios {
 
 	@Override
 	public String toString() {
-		return id + ", " + nome + ", " + String.format("%.2f", salario);
+		return "\nFuncionarios [id=" + id + ", nome=" + nome + ", salario=" + salario + "]";
 	}
 
+
+	
+	
+	
+	
 	
 }

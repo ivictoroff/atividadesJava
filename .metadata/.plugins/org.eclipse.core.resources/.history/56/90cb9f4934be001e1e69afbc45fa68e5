@@ -28,8 +28,7 @@ public class Programa {
 			Integer id = sc.nextInt();
 			
 			System.out.print("Nome:");
-			sc.nextLine();
-			String nome = sc.nextLine();
+			String nome = sc.next();
 			
 			System.out.print("Salario:");
 			Double salario = sc.nextDouble();
@@ -52,13 +51,12 @@ public class Programa {
 				Double perc = sc.nextDouble();
 				lista.get(pos).aumento(perc);
 			}
-		System.out.println();
+			System.out.println();
+			
 		
 		System.out.println("lista de funcionarios: ");
-		for (Funcionarios func : lista) {
-			System.out.println(func);
-		}
-
+		System.out.println(lista);
+		
 		
 		sc.close();
 	}
